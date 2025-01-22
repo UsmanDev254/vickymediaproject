@@ -1,0 +1,57 @@
+/* My Project Css */
+
+
+.navbar_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+  .mega-menu {
+    width: 100%;
+  }
+  .mega-menu h6 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .nabar_inner .navbar_link {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a#basic-nav-dropdown {
+  color: #fff;
+}
+
+a#basic-nav-dropdown {
+  color: #fff;
+}
+
+.navbar_btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px !important;
+  font-family: 'Poppins';
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.navbar_btn:hover {
+  color: #FF9104;
+  background: #fff;
+  transition: 1s;
+}
+
+  @media screen and (max-width: 1024px){
+    div#basic-navbar-nav {
+        display: none;
+    }
+  }
+  

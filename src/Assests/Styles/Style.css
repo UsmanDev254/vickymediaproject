@@ -1,0 +1,262 @@
+/* home banner banner css start  */
+
+p , a {
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 400;
+}
+
+
+.banner-content {
+    width: 60%;
+    z-index: 1;
+}
+
+.banner img {
+    z-index: 0;
+}
+
+.banner-content h1 , .abt-title h2, .about_title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: "Outfit", sans-serif;
+}
+
+ .abt-counter h4, .abt-counter strong {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: "Outfit", sans-serif;
+}
+
+.abt-title h2 {
+    color: #FF9104;
+}
+
+.abt-title h3 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: "Outfit", sans-serif;
+}
+
+.banner-content p {
+    font-size: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.banner-btn .bttnn {
+    width: 200px;
+    height: 45px;
+    background: #FF9104;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    /* font-family: 'Poppins', sans-serif; */
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-btn .bttnn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #FFF;
+}
+
+.banner-btn  #bttnn-2 {
+    border: 1px solid #FFF;
+    background: transparent;
+}
+
+.banner-btn #bttnn-2:hover {
+    background: #FFF;
+    color: #0F2942;
+}
+
+
+.banner {
+    width: 100%;
+    /* background-image: url(../images/banner-2.webp); */
+    background-image: url(../../Assests/Images/banner-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.banner img.ball {
+    animation: popup 3s infinite;
+    
+
+}
+
+
+
+/* Media Curies Styling */
+
+
+@media only screen and (max-width: 992px) {
+    .banner .banner-content {
+        width: 80%;
+    }
+    .banner .banner-content  h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* Marquee content styling */
+
+.marquee1, .marquee2 {
+    width: 99.9%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    background-color: #060e32;
+    position: absolute;
+    left: 0;
+    padding: 20px 0;
+    box-sizing: border-box; 
+  }
+
+  .marquee1 {
+    transform: rotate(4deg);
+    z-index: 2;
+}
+  
+  .marquee2 {
+    background-color: #FF9104;
+    transform: rotate(-4deg);
+    z-index: 1;
+
+  }
+  
+  /* Inner content of the marquee */
+  .marquee1 .marquee-content {
+    display: inline-block; 
+    animation: scroll-marquee 20s linear infinite; 
+  }
+  /* Inner content of the marquee */
+  .marquee2 .marquee-content {
+    display: inline-block; 
+    animation: scroll-marquee2 20s linear infinite; 
+  }
+  
+  /* Style for individual headings */
+  .marquee-content h4 {
+    display: inline-block; 
+    margin-right: 100px; 
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #FF9104;
+  }
+  
+  .marquee2 .marquee-content h4 {
+    color: #060e32;
+  }
+  
+  /* Keyframes for infinite scrolling */
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(100%); /* Start from off-screen right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move off-screen left */
+    }
+  }
+
+  @keyframes scroll-marquee2 {
+    0% {
+      transform: translateX(-100%); /* Start from off-screen right */
+    }
+    100% {
+      transform: translateX(100%); /* Move off-screen left */
+    }
+  }
+
+
+
+  .abt {
+    background-image: url(../../Assests/Images/abt-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    padding: 15% 0 10% 0;
+}
+
+.abt .img-1, .abt .img-2 {
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: rotate(-40deg);
+}
+
+.abt .img-2 {
+    bottom: 0;
+    right: 0;
+}
+
+
+  
+    
+    /* Media screen styling........... */
+
+
+    @media only screen and (max-width: 767px) {
+        
+        .banner {
+            height: 100vh;
+    }
+
+    .banner .banner-content ,.banner .banner-btn {
+        text-align: center !important;
+        justify-content: center;
+    }
+    .banner .banner-content  h1 {
+        font-size: 35px;
+    }
+    .banner p {
+        font-size: 14px;
+    }
+    .banner .bttnn {
+        font-size: 13px;
+        width: 150px;
+        margin-right: 10px;    
+    }
+    .banner img.ball {
+        display: none;
+    }
+    .banner .banner-content {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: -30px;
+    }
+}
