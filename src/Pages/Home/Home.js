@@ -9,6 +9,12 @@ import Ellipse6 from "../../Assests/Images/Star 1.png";
 import Ellipse7 from "../../Assests/Images/Group 3.png";
 import about1 from "../../Assests/Images/Frame.png";
 import about2 from "../../Assests/Images/Frame (1).png";
+import ServiceSection from "../../Components/Services/ServicesCard";
+import ProjectTab from "../../Components/Projects/ProjectTab";
+// import LogoSlide from "../../Components/Projects/LogoSlider";
+import Testimonial from "../../Components/Testimonials/Testimonial";
+import Footer from "../../Components/Footer/Footer";
+import PricingPlan from "../../Components/PricingPlans/PricingPlan";
 
 function HomePage() {
   return (
@@ -143,7 +149,7 @@ function HomePage() {
           </div>
 
           {/* Content Section */}
-          <div className="row justify-content-center my-5">
+          <div className="row justify-content-center my-md-5 my-2">
             <div className="col-lg-2">
               <div className="abt-content text-white">
                 <h3 className="m-0 about_title">About Us</h3>
@@ -151,7 +157,7 @@ function HomePage() {
             </div>
             <div className="col-lg-10">
               <div className="abt-content">
-                <p className="py-4 ps-4 m-0 text-white">
+                <p className="py-4 m-0 text-white">
                   We specialize in innovative digital marketing solutions that
                   help businesses grow online. From website design to SEO,
                   social media, and more, we create tailored strategies that
@@ -206,6 +212,17 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      
+      {/* Services card html */}
+
+      <ServiceSection />
+      <ProjectTab />
+      {/* <LogoSlide /> */}
+      <PricingPlan />
+      <Testimonial />
+      <Footer />
+
     </>
   );
 }

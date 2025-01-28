@@ -1,262 +1,715 @@
+/* Loader Styling */
+
+.Loader_main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4e5cb4;
+}
+
+/* Mouse tracker styling */
+
+.tracker {
+  position: fixed; 
+  width: 60px;
+  aspect-ratio: 1/1;
+  border: 3px solid #FF9104;
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.tracker .inner-ball {
+  width: 15px;
+  aspect-ratio: 1/1;
+  background-color: #FF9104;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 1s ease-out;
+}
+
+
 /* home banner banner css start  */
 
-p , a {
-    font-family: 'Poppins', sans-serif;
+p,
+a,
+button {
+  font-family: "Poppins", sans-serif;
 }
 
-p{
-    font-weight: 400;
+p {
+  font-weight: 400;
+  margin: 0px !important;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Outfit", sans-serif;
+}
 
 .banner-content {
-    width: 60%;
-    z-index: 1;
+  width: 60%;
+  z-index: 1;
+  padding-top: 5%;
 }
 
 .banner img {
-    z-index: 0;
+  z-index: 0;
 }
 
-.banner-content h1 , .abt-title h2, .about_title {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.1;
-    font-family: "Outfit", sans-serif;
+.banner-content h1,
+.abt-title h2,
+.about_title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "Outfit", sans-serif;
 }
 
- .abt-counter h4, .abt-counter strong {
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 1.1;
-    font-family: "Outfit", sans-serif;
+.abt-counter h4,
+.abt-counter strong {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Outfit", sans-serif;
 }
 
 .abt-title h2 {
-    color: #FF9104;
+  color: #ff9104;
 }
 
 .abt-title h3 {
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1.1;
-    font-family: "Outfit", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Outfit", sans-serif;
 }
 
-.banner-content p {
-    font-size: 20px;
-    /* font-family: 'Poppins', sans-serif; */
+.banner-content p,
+.abt-content p {
+  font-size: 20px;
 }
 
 .banner-btn .bttnn {
-    width: 200px;
-    height: 45px;
-    background: #FF9104;
-    display: flex;
-    align-items: center;
-    color: #FFF;
-    justify-content: center;
-    border-radius: 5px;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    /* font-family: 'Poppins', sans-serif; */
-    transition: all 0.3s ease-in-out;
+  width: 200px;
+  height: 45px;
+  background: #ff9104;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  /* font-family: 'Poppins', sans-serif; */
+  transition: all 0.3s ease-in-out;
 }
 
 .banner-btn .bttnn:hover {
-    background: #fff;
-    color: #000;
-    border: 1px solid #FFF;
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
 }
 
-.banner-btn  #bttnn-2 {
-    border: 1px solid #FFF;
-    background: transparent;
+.banner-btn #bttnn-2 {
+  border: 1px solid #fff;
+  background: transparent;
 }
 
 .banner-btn #bttnn-2:hover {
-    background: #FFF;
-    color: #0F2942;
+  background: #fff;
+  color: #0f2942;
 }
-
 
 .banner {
-    width: 100%;
-    /* background-image: url(../images/banner-2.webp); */
-    background-image: url(../../Assests/Images/banner-2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120vh;
-    display: flex;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  /* background-image: url(../images/banner-2.webp); */
+  background-image: url(../../Assests/Images/banner-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
+.navbar_parent .container {
+  padding: 10px 20px;
+}
+
+.navbar_parent {
+  padding: 0px !important;
+}
 
 @keyframes popup {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
 
 .banner img.ball {
-    animation: popup 3s infinite;
-    
-
+  animation: popup 3s infinite;
 }
-
-
-
-/* Media Curies Styling */
-
-
-@media only screen and (max-width: 992px) {
-    .banner .banner-content {
-        width: 80%;
-    }
-    .banner .banner-content  h1 {
-        font-size: 50px;
-    }
-}
-
 
 /* Marquee content styling */
 
-.marquee1, .marquee2 {
-    width: 99.9%;
-    overflow: hidden; 
-    white-space: nowrap; 
-    background-color: #060e32;
-    position: absolute;
-    left: 0;
-    padding: 20px 0;
-    box-sizing: border-box; 
-  }
-
-  .marquee1 {
-    transform: rotate(4deg);
-    z-index: 2;
-}
-  
-  .marquee2 {
-    background-color: #FF9104;
-    transform: rotate(-4deg);
-    z-index: 1;
-
-  }
-  
-  /* Inner content of the marquee */
-  .marquee1 .marquee-content {
-    display: inline-block; 
-    animation: scroll-marquee 20s linear infinite; 
-  }
-  /* Inner content of the marquee */
-  .marquee2 .marquee-content {
-    display: inline-block; 
-    animation: scroll-marquee2 20s linear infinite; 
-  }
-  
-  /* Style for individual headings */
-  .marquee-content h4 {
-    display: inline-block; 
-    margin-right: 100px; 
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    color: #FF9104;
-  }
-  
-  .marquee2 .marquee-content h4 {
-    color: #060e32;
-  }
-  
-  /* Keyframes for infinite scrolling */
-  @keyframes scroll-marquee {
-    0% {
-      transform: translateX(100%); /* Start from off-screen right */
-    }
-    100% {
-      transform: translateX(-100%); /* Move off-screen left */
-    }
-  }
-
-  @keyframes scroll-marquee2 {
-    0% {
-      transform: translateX(-100%); /* Start from off-screen right */
-    }
-    100% {
-      transform: translateX(100%); /* Move off-screen left */
-    }
-  }
-
-
-
-  .abt {
-    background-image: url(../../Assests/Images/abt-bg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 100px 0;
-    position: relative;
-    padding: 15% 0 10% 0;
+.marquee1,
+.marquee2 {
+  width: 99.9%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #060e32;
+  position: absolute;
+  left: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
-.abt .img-1, .abt .img-2 {
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    transform: rotate(-40deg);
+.marquee1 {
+  transform: rotate(4deg);
+  z-index: 2;
+}
+
+.marquee2 {
+  background-color: #ff9104;
+  transform: rotate(-4deg);
+  z-index: 1;
+}
+
+/* Inner content of the marquee */
+.marquee1 .marquee-content {
+  display: inline-block;
+  animation: scroll-marquee 20s linear infinite;
+}
+/* Inner content of the marquee */
+.marquee2 .marquee-content {
+  display: inline-block;
+  animation: scroll-marquee2 20s linear infinite;
+}
+
+/* Style for individual headings */
+.marquee-content h4 {
+  display: inline-block;
+  margin-right: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #ff9104;
+}
+
+.marquee2 .marquee-content h4 {
+  color: #060e32;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%); /* Start from off-screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen left */
+  }
+}
+
+@keyframes scroll-marquee2 {
+  0% {
+    transform: translateX(-100%); /* Start from off-screen right */
+  }
+  100% {
+    transform: translateX(100%); /* Move off-screen left */
+  }
+}
+
+.abt {
+  background-image: url(../../Assests/Images/abt-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  padding: 12% 0 5% 0;
+}
+
+.abt .img-1,
+.abt .img-2 {
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transform: rotate(-40deg);
 }
 
 .abt .img-2 {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Services card styling */
+
+.services-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f57c00;
+}
+
+.section-subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #001f3f;
+}
+
+.services-grid {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.box_main {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+  width: 49%;
+}
+
+.box_main:hover {
+  transform: translateY(-10px);
+  background: #060e32;
+  color: #fff;
+}
+.box_main:hover h3 {
+  color: #fff;
+}
+
+.card_child_box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #001f3f;
+  margin-bottom: 0.5rem;
+}
+
+.card_icon img {
+  width: 100px;
 }
 
 
+
+/* Project Tab styling */
+
+div#tabs button {
+  margin-right: 40px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 2px 0px;
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+div#tabs button:hover {
+  border-bottom: 3px solid #f57c00;
+}
+
+div#tabs button.active {
+  border-bottom: 3px solid #f57c00;
+}
+
+
+/* Swiper Slider Css Styling */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.swiper-wrapper{
+  transition-timing-function: linear !important;
+}
+
+
+.swiper-slide img{
+  width: 80% !important;
+  transition: all 1s ease-in-out;
+}
+
+.swiper-slide:hover img{
+  transform: scale(1.1);
+}
+
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20;
+}
+
+.image-block {
+  overflow: hidden;
+  height: 250px;
+  margin-bottom: 30px; /* Add spacing between images */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid #e3d4d4;
+}
+
+.image-block:last-child {
+  margin-bottom: 0; /* Remove margin for the last image */
+}
+
+.mySwiper .swiper-slide {
+  display: block;
+  width: auto; /* Ensure slide width adjusts properly */
+
+}
+
+
+/* Testimonial Styling */
+
+.testimonial_img img {
+  width: 50px !important;
+  border-radius: 100%;
+}
+
+.testimonial_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Testinomial_Content_Main {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid #e3d4d4;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  height: 230px !important;
+}
+
+
+
+/* Pricing Plan Section */
+
+.pricing_tabs button {
+  color: #fff;
+}
+
+.Pricing_Tab {
+  background: url('../../Assests/Images/abt-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.price-card {
+  background: #FFF;
+  padding: 40px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+.current-price{
+  font-size: 40px;
+  font-weight: 700;
+  color: #f57c00;
+}
+
+.plan_list ul {
+  list-style-type: none;
+}
+
+svg.svg-inline--fa.fa-check {
+  padding-right: 10px;
+  color: #f57c00;
+}
+
+.price-bttn {
+  background: #0F2942;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 100px;
+  /* margin: 10px auto; */
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.price-bttn:hover {
+  background: #FF9104;
+}
+
+.strip {
+  width: 200px;
+  height: 50px;
+  background: #0F2942;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  top: 12px;
+  right: -60px;
+  transform: rotate(45deg);
+  font-weight: 800;
+}
+
+
+
+
+/* Footer Styling Start */
+
+.footer-section {
+  padding: 100px 0;
+  border-bottom: 1px solid #0F2942;
+}
+
+.footer-logo{
+  width: 150px;
+}
+
+.footer p{
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.footer-title{
+  color: #0F2942;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Outfit", sans-serif;
+}
+
+.footer-links li a{
+  color: #4e4e4e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+}
+
+.footer-links li{
+  transition: all 0.3s ease-in-out;
+  list-style-type: none;
+}
+
+.footer-links li:hover{
+  padding-left: 10px;
+}
+
+.footer-links li:hover a{
+  color: #FF9104;
+}
+
+.footer-icons a.icn{
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF9104;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 100px;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icons a.icn:hover{
+  background: #0F2942;
+}
+
+.pre-footer p{
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+
+
+
+/* Responsiveness Media screen ........... */
+
+
+@media only screen and (max-width: 1024px) {
+
+  /* Tabs Slider Content */
+  .image-block {
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+
+  /* Menu Styling */
+
+  .dropdown-menu.show {
+    width: 100% !important;
+}
+
+.offcanvas {
+  z-index: 999999 !important;
+
+}
+
+a#basic-nav-dropdown {
+  color: #000 !important;
+}
+
+.offcanvas-body a {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+  .banner .banner-content,
+  .banner .banner-btn {
+    text-align: center !important;
+    justify-content: center;
+  }
+  .banner .banner-content {
+    width: 100%;
+    padding-top: 70px;
+  }
+  .banner .banner-content h1 {
+    font-size: 50px;
+  }
   
-    
-    /* Media screen styling........... */
+  .banner .bttnn {
+    /* font-size: 13px; */
+    width: 200px;
+    margin-right: 10px;
+  }
+  .banner img.ball {
+    display: none;
+  }
 
+  .abt{
+    padding: 20% 0 10% 0;
+  }
+  
 
-    @media only screen and (max-width: 767px) {
-        
-        .banner {
-            height: 100vh;
-    }
+  /* services section styling */
 
-    .banner .banner-content ,.banner .banner-btn {
-        text-align: center !important;
-        justify-content: center;
-    }
-    .banner .banner-content  h1 {
-        font-size: 35px;
-    }
-    .banner p {
-        font-size: 14px;
-    }
-    .banner .bttnn {
-        font-size: 13px;
-        width: 150px;
-        margin-right: 10px;    
-    }
-    .banner img.ball {
-        display: none;
-    }
-    .banner .banner-content {
-        width: 100%;
-        text-align: center;
-        position: relative;
-        top: -30px;
-    }
+  .box_main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 10px;
+  }
+  .card_icon img {
+    width: 60px;
 }
+}
+
+
+
+@media only screen and (max-width: 575px) {
+
+  /* Pricing Tab Styling */
+
+  h2.current-price {
+    font-size: 24px;
+    margin: 10px 0 !important;
+}
+
+/* Tabs Slider Content */
+
+  div#tabs button {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+  .swiper-slide img {
+    width: 50% !important;
+}
+
+   .image-block {
+    height: 200px;
+    margin-bottom: 10px; /* Add spacing between images */
+  }
+
+  .banner{
+    height: 100vh;
+  }
+
+.banner-content p, .abt-content p , p {
+  font-size: 14px;
+}
+.banner .bttnn {
+  font-size: 14px;
+  width: 180px;
+}
+  .marquee-content h4 {
+    font-size: 16px;
+}
+.banner .banner-content h1, .abt-title h2, .about_title {
+  font-size: 32px;
+}
+.abt{
+  padding: 30% 0 10% 0;
+}
+.abt-counter h4, .abt-counter strong  {
+  font-size: 24px;
+}
+.abt-title h3  {
+  font-size: 16px;
+}
+.abt-counter {
+  padding: 10px 0px;
+}
+
+.marquee1, .marquee2 {
+  width: 99.5%;
+  padding: 10px 0;
+  left: 0px;
+}
+
+.section-title , .card_child_box h3  {
+  font-size: 18px;
+}
+
+.section-subtitle {
+  font-size: 24px;
+}
+
+
+}
+
+

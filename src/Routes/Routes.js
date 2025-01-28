@@ -1,6 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import NavbarComponent from '../Components/Header/Navbar';
+import MouseTracker from '../MouseTracker/MouseTracker';
+import Loader from "../Assests/Images/icons8-loading-100.png";
+
 
 const Home = lazy(() => import('../Pages/Home/Home'));
 const About = lazy(() => import('../Pages/About/About'));
@@ -11,7 +14,8 @@ const Contact = lazy(() => import('../Pages/Contact/Contact'));
 function WebRoutes(){
     return(
         <BrowserRouter>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className='Loader_main'><img src={Loader} alt='loader'></img></div>}>
+          <MouseTracker />
           <NavbarComponent />
             <Routes>
               <Route path="/" element={<Home />} />

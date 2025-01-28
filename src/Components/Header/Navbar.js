@@ -20,7 +20,7 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <Navbar style={{background: "#0B0C49"}} variant="dark" expand="lg" className="py-3 navbar_parent">
+      <Navbar style={{background: "#0B0C49"}} variant="dark" expand="lg" className="navbar_parent">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
