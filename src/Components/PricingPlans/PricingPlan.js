@@ -115,7 +115,7 @@ function PricingPlan() {
         price: 10.00,
         description: "Lorem ipsum dolor sit amet.",
         features: [
-          "Responsive Web",
+          "Responsive Web Design",
           "SEO Optimization",
           "User-Friendly Interface",
           "Fast Load Time",
