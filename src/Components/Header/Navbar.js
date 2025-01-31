@@ -99,7 +99,14 @@ const NavbarComponent = () => {
       {/* Offcanvas for mobile/tablet */}
       <Offcanvas show={showOffcanvas} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Menu</Offcanvas.Title>
+          <Offcanvas.Title>
+            <img
+              className="site_logo"
+              src={logo} // Replace with your logo path
+              alt="Logo"
+              style={{ width: '130px', marginRight: '10px' }}
+            />
+            </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
@@ -113,28 +120,28 @@ const NavbarComponent = () => {
               <div className="d-lg-flex mega-menu p-4 bg-dark text-white">
                 <div className="col-lg-4">
                   <h6>Category 1</h6>
-                  <NavDropdown.Item as={Link} to="/services/service1" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service1" onClick={handleClose} style={{color: '#fff'}}>
                     Service 1
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/service2" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service2" onClick={handleClose} style={{color: '#fff'}}>
                     Service 2
                   </NavDropdown.Item>
                 </div>
                 <div className="col-lg-4">
                   <h6>Category 2</h6>
-                  <NavDropdown.Item as={Link} to="/services/service3" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service3" onClick={handleClose} style={{color: '#fff'}}>
                     Service 3
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/service4" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service4" onClick={handleClose} style={{color: '#fff'}}>
                     Service 4
                   </NavDropdown.Item>
                 </div>
                 <div className="col-lg-4">
                   <h6>Category 3</h6>
-                  <NavDropdown.Item as={Link} to="/services/service5" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service5" onClick={handleClose} style={{color: '#fff'}}>
                     Service 5
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/service6" onClick={handleClose}>
+                  <NavDropdown.Item as={Link} to="/services/service6" onClick={handleClose} style={{color: '#fff'}}>
                     Service 6
                   </NavDropdown.Item>
                 </div>

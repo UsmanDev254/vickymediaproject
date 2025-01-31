@@ -11,7 +11,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #4e5cb4;
+  /* background-color: #4e5cb4; */
 }
 
 /* Mouse tracker styling */
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999999;
 }
 
 .tracker .inner-ball {
@@ -44,7 +44,8 @@
 
 p,
 a,
-button {
+button,
+li {
   font-family: "Poppins", sans-serif;
 }
 
@@ -396,7 +397,11 @@ div#tabs button.active {
 .mySwiper .swiper-slide {
   display: block;
   width: auto; /* Ensure slide width adjusts properly */
+  border-radius: 20px !important;
+}
 
+.swiper-slide {
+  border-radius: 10px !important;
 }
 
 
@@ -498,7 +503,7 @@ svg.svg-inline--fa.fa-check {
 /* Footer Styling Start */
 
 .footer-section {
-  padding: 100px 0;
+  padding: 80px 0;
   border-bottom: 1px solid #0F2942;
 }
 
@@ -565,11 +570,200 @@ svg.svg-inline--fa.fa-check {
 
 
 
+/* About us page styling */
+
+.get_solution_parent {
+  padding: 100px 0px;
+  background: #E9EBF5;
+}
+
+.boxes_inner_main {
+  width: 55%;
+  padding-right: 100px
+}
+.boxes_img_main {
+  width: 45%;
+}
+
+.box_child{
+  position: relative;
+  background: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgb(201, 201, 201);
+}
+.box_child h3 {
+  color:#FF9104;
+}
+
+.marketing_box  {
+  background: #FFF;
+  box-shadow: 0 0 10px rgb(199, 199, 199);
+  padding: 30px 10px;
+  border-radius: 20px;
+  width: 380px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+}
+
+.marketing_img img {
+  height: 450px;
+  border-radius: 20px;
+}
+
+.solution_title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color:#FF9104;
+}
+
+.box_child span {
+  background: #FFF;
+  width: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 25px;
+  position: absolute;
+  top: -40px;
+}
+
+
+/* FAQS Section styling start */
+
+.faqs{
+  background: #F0F1F4;
+  padding: 100px 0px;
+}
+
+.faqs button.accordion-button.collapsed {
+  background: #FFF;
+  border: 2px solid #E3E4E4;
+  color: #000;
+  margin: 15px 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+  background: #FF9104 !important;
+  color: #fff !important;
+}
+
+.faqs .accordion-button:focus {
+  background: #FF9104;
+  color: #FFF;
+  box-shadow: none;
+}
+
+.faqs .accordion-item {
+  border: none;
+}
+
+.accordion-body ol li {
+  padding: 5px 0px;
+}
+
+
+/* Contact Us page sytling */
+
+
+.contact {
+  background-image: url(../../Assests/Images/abt-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 150px 0 100px 0;
+}
+
+.contact h1 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.contact #name, .contact #email, .contact #phone {
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  padding: 0 10px;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+}
+.contact #message{
+  width: 100%;
+  height: 100px;
+  font-size: 14px;
+  padding: 0 10px;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+}
+
+.contact #name:focus, .contact #email:focus, .contact #phone:focus, .contact #message:focus{
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.contact .con-btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF9104;
+  color: #FFFF;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 2px solid #FF9104;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .con-btn:hover{
+  background: transparent;
+}
+
+span.error_message {
+  color: red;
+}
+
+
+
 
 /* Responsiveness Media screen ........... */
 
 
 @media only screen and (max-width: 1024px) {
+
+  /* about us page styling...... */
+
+  .boxes_inner_main {
+    width: 100%;
+    padding-right: 0px
+  }
+  .boxes_img_main {
+    width: 100%;
+  }
+  .marketing_box {
+    width: 500px;
+    top: -40px;
+}
+
+.get_solution_parent, .faqs {
+  padding: 50px 0px;
+}
+
+
+  /* Home page styling start..... */
 
   /* Tabs Slider Content */
   .image-block {
@@ -621,7 +815,7 @@ a#basic-nav-dropdown {
   }
 
   .abt{
-    padding: 20% 0 10% 0;
+    padding: 20% 0 5% 0;
   }
   
 
@@ -642,6 +836,27 @@ a#basic-nav-dropdown {
 
 @media only screen and (max-width: 575px) {
 
+  /* about us page styling start........ */
+
+  .marketing_box {
+    width: 300px;
+    top: -50px;
+}
+
+.get_solution_parent, .faqs {
+  padding: 30px 0px;
+}
+
+.solution_title h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h2.accordion-header h5 {
+  font-size: 16px;
+}
+
+/* Home page styling start........ */
   /* Pricing Tab Styling */
 
   h2.current-price {
@@ -707,6 +922,22 @@ a#basic-nav-dropdown {
 
 .section-subtitle {
   font-size: 24px;
+}
+
+
+/* Header styling start......... */
+
+img.site_logo , .footer-logo {
+  width: 80px !important;
+}
+
+/* Footer styling...... */
+
+.footer-links li a {
+  font-size: 14px;
+}
+.footer-links li {
+  margin: 10px 0px !important;
 }
 
 

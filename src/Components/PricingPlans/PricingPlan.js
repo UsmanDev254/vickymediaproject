@@ -134,7 +134,7 @@ function PricingPlan() {
 
   return (
     <>
-      <div className="Pricing_Tab py-3 py-md-5 mt-2 mt-md-5 mb-5 px-md-0">
+      <div className="Pricing_Tab py-3 py-md-5 px-md-0">
         <div className="Pricing_Title container d-flex flex-column justify-content-center align-items-center">
           <h2 className="section-title">Our Prices</h2>
           <h3 className="section-subtitle text-white w-75 my-0 my-md-3">

@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer-container container">
           <div className="footer-row row text-start">
             {/* Logo and Description */}
-            <div className="footer-col col-lg-4 col-md-7">
+            <div className="footer-col col-lg-4 col-md-12 pb-4 pb-md-5 pb-lg-0">
               <div className="footer-content">
                 <NavLink to="/">
                   <img
@@ -69,7 +69,7 @@ function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="footer-col col-lg-2 col-md-5">
+            <div className="footer-col col-lg-2 col-md-4">
               <div className="footer-content">
                 <h3 className="footer-title mb-4">Quick Links</h3>
                 <ul className="footer-links m-0 p-0">
@@ -93,7 +93,7 @@ function Footer() {
             </div>
 
             {/* Our Services */}
-            <div className="footer-col col-lg-3 col-md-5">
+            <div className="footer-col col-lg-3 col-md-4">
               <div className="footer-content">
                 <h3 className="footer-title mb-4">Our Services</h3>
                 <ul className="footer-links m-0 p-0">
@@ -125,17 +125,17 @@ function Footer() {
             </div>
 
             {/* Stay In Touch */}
-            <div className="footer-col col-lg-3 col-md-7">
+            <div className="footer-col col-lg-3 col-md-4">
               <div className="footer-content">
                 <h3 className="footer-title mb-4">Stay In Touch</h3>
-                <p className="footer-address">Your Address HERE.........</p>
+                <p className="footer-address">i8 Markaz, Islamabad</p>
                 <p className="footer-contact">
                   <FontAwesomeIcon
                     icon={faPhone}
                     className="footer-phone-icon"
                     style={{ color: "#0F2942" }}
                   />{" "}
-                  +00 000 000000
+                  <NavLink to={'tel:+92 3087246381'} style={{color: '#4E4E4E'}}>+92 3087246381</NavLink>
                 </p>
               </div>
             </div>
@@ -145,7 +145,7 @@ function Footer() {
       <section className="pre-footer">
         <div className="container py-3">
           <p className="text-center m-0">
-            © Copyright 2024 by VIcky Media Solutions. All Rights Reserved.
+            © Copyright 2025 by Usman Malik. All Rights Reserved.
           </p>
         </div>
       </section>
