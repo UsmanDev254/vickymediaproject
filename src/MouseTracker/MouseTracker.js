@@ -8,11 +8,11 @@ const MouseTracker = () => {
       setMousePosition({ x: event.clientX, y: event.clientY });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
 
     // Cleanup the event listener when the component unmounts
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []); // Empty dependency array ensures the effect runs only once on mount
 
