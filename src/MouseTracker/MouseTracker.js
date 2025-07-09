@@ -17,19 +17,7 @@ function MouseTracker() {
     };
   }, []); // Empty dependency array ensures it runs once on mount and unmount
   return (
-    <div
-      style={{
-        // position: "fixed",
-        left: mousePosition.x,
-        top: mousePosition.y,
-        // width: "20px",
-        // height: "20px",
-        // borderRadius: "50%",
-        // backgroundColor: "blue",
-        pointerEvents: "none", // Prevents the ball from interfering with other elements
-      }}
-      
-    >
+    <div>
       <div className="tracker">
         <div className="inner-ball"></div>
       </div>
