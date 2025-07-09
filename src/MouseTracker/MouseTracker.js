@@ -18,9 +18,9 @@ const MouseTracker = () => {
 
   return (
     <div>
-      <h1>Mouse Position:</h1>
-      <p>X: {mousePosition.x}</p>
-      <p>Y: {mousePosition.y}</p>
+      <div className="tracker">
+        <div className="inner-ball"></div>
+      </div>
     </div>
   );
 };
