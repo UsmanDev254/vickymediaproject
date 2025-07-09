@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const SMOOTHING = 0.15;              // 0.15 ≈ 150 ms lag
+const SMOOTHING = 0.15;              // 0.15 ≈ 150 ms lagg
 
 function MouseTracker() {
   const trackerRef   = useRef(null);          // the dot that follows the mouse
