@@ -19,16 +19,21 @@ function MouseTracker() {
   return (
     <div
       style={{
-        position: "fixed",
+        // position: "fixed",
         left: mousePosition.x,
         top: mousePosition.y,
-        width: "20px",
-        height: "20px",
-        borderRadius: "50%",
-        backgroundColor: "blue",
+        // width: "20px",
+        // height: "20px",
+        // borderRadius: "50%",
+        // backgroundColor: "blue",
         pointerEvents: "none", // Prevents the ball from interfering with other elements
       }}
-    ></div>
+      
+    >
+      <div className="tracker">
+        <div className="inner-ball"></div>
+      </div>
+    </div>
   );
 }
 
