@@ -105,7 +105,7 @@ function ProjectTab() {
             delay: 0,
             disableOnInteraction: false,
           }}
-          speed={2000}
+          speed={6000}
           modules={[Autoplay]}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 10 },
