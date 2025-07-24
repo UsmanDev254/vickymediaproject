@@ -101,12 +101,12 @@ function ProjectTab() {
           slidesPerView={4}
           spaceBetween={30}
           loop={false}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 0,
+          //   disableOnInteraction: false,
+          // }}
           speed={2000}
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 20 },
