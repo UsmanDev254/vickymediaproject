@@ -100,12 +100,12 @@ function ProjectTab() {
         <Swiper
           slidesPerView={4}
           spaceBetween={30}
-          loop={true}
+          loop={false}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
           }}
-          speed={6000}
+          speed={2000}
           modules={[Autoplay]}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 10 },
