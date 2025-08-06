@@ -115,6 +115,8 @@ function ProjectTab() {
           }}
           className="mySwiper pt-2 pt-md-0"
         >
+          {/* Reminder------> key={`group-${groupIndex}`} = key={"group-" + groupIndex} */}
+
           {TabsContent[tabKeys[activeTab]].map((imageGroup, groupIndex) => (
             <SwiperSlide key={`group-${groupIndex}`} className="slide">
               {imageGroup.map((img, imgIndex) => (
